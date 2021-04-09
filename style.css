@@ -118,6 +118,11 @@ a{
     font-size: 16px;
 }
 
+.desc-par button:hover{
+    background-color: white;
+    color: teal;
+}
+
 .footer{
     display: flex;
     padding: 40px 10px;
@@ -128,6 +133,10 @@ a{
 .left-footer{
     color: white;
     margin-left: 20px;
+}
+
+.left-footer p{
+    text-align: left;
 }
 
 .right-footer{
@@ -150,7 +159,7 @@ a{
 }
 
 .right-footer ul li a:hover{
-    color: black;
+    color: grey;
 }
 
 @media only screen and (max-width: 650px) {
@@ -159,4 +168,14 @@ a{
         flex-direction: column;
         margin-bottom: 40px;
     }
+    .footer{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-footer, .left-footer{
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    
   }
